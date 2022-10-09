@@ -51,6 +51,22 @@
         font-size: 20px;
         line-height: 27.32px;
     }
+    h6{
+        color: #39CDCC;
+        font-size: 12px;
+        line-height: 16.39px;
+    }
+    button{
+        background-color: #39CDCC;
+        font-size: 14px;
+        line-height: 19.12px;
+        color: white;
+        width: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+    }
 }
 .Input-holder{
     display: flex;
@@ -89,21 +105,11 @@
 }
 
 .Right-Container h6{
-    color: #39CDCC;
-    font-size: 12px;
-    line-height: 16.39px;
+    
 }
 
 .Right-Container button{
-    background-color: #39CDCC;
-    font-size: 14px;
-    line-height: 19.12px;
-    color: white;
-    width: 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    border-radius: 5px;
+    
 }
 
 // #213F7D

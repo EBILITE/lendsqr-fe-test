@@ -2,9 +2,17 @@ import React from 'react'
 import './LoginPage.scss';
 import LogoImage from  '../../Assests/Images/LendSqrLogo.svg';
 import HeroImage from  '../../Assests/Images/LandingPageImage.svg';
+import { useNavigate } from 'react-router-dom';
+
 
 const LoginPage = () => {
-  return (
+
+  const navigate = useNavigate()
+
+  const handleNavigate = () => {
+    navigate('/Dashboard')
+  }
+   return (
     <div className='LoginWrapper'>
       <div className='LoginContainer'>
 
@@ -38,7 +46,7 @@ const LoginPage = () => {
 
             <h6>FORGOT PASSWORD?</h6>
 
-            <button> LOG IN</button>
+            <button onClick={handleNavigate}> LOG IN</button>
           </div>
         </div>
       </div>
