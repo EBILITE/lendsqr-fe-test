@@ -10,13 +10,37 @@ const LoginPage = () => {
 
         {/*    Left Side */}
         <div className='Left-Wrapper'>
-          {/* <img src={LogoImage} alt='logo'/> */}
-          <img src={HeroImage} alt='Hero'/>
+          <div>
+            <div>
+              <img src={LogoImage} alt='logo'/>
+            </div>
+            
+            <div className='HeroImageCont'>
+              <img src={HeroImage} alt='Hero'/>
+            </div>
+          </div>
+          
         </div>
 
 
         {/*  Right Side */}
-        <div className='Right-Wrapper'><h1>Right</h1></div>
+        <div className='Right-Wrapper'>
+          <div className='Right-Container'>
+            <h2>Welcome!</h2>
+            <h4>Enter details to login.</h4>
+            <div className='Input-holder'>
+              <input placeholder='Email' className='input1'/>
+              <div className='Input2'>
+                <input placeholder='Password'/>
+                <h5>Show</h5>
+              </div>
+            </div>
+
+            <h6>FORGOT PASSWORD?</h6>
+
+            <button> LOG IN</button>
+          </div>
+        </div>
       </div>
       
     </div>
