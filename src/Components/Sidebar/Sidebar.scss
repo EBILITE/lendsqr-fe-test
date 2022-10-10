@@ -1,0 +1,14 @@
+
+$primary: #213F7D;
+.Switch-Org{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    // margin-bottom: -20px;
+    h4 {
+        color: $primary;
+    }
+    h5{
+        color: $primary;
+    }
+}
