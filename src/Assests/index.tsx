@@ -24,7 +24,7 @@ import User1 from './Images/iUser.svg'
 import ActiveUser from './Images/iActiveUser.svg'
 import UserWithLoan from './Images/iUserWithLoan.svg'
 import UserWithSavings from './Images/iUserWithSavings.svg'
-
+import Lines from './Images/3Lines.svg'
 export { AuditLogo, 
     Dashboard, UserWithSavings, 
     Decisions,UserWithLoan , 
@@ -42,4 +42,4 @@ export { AuditLogo,
     SavingProduct,Savings,
     ServiceAmount, Settlement,
     Transactions, 
-    Services, WhiteList, User}
+    Services, WhiteList, User, Lines}

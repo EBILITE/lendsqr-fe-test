@@ -1,4 +1,4 @@
-import { ActiveUser, User1, UserWithLoan, UserWithSavings } from "../Assests"
+import { ActiveUser, User1, UserWithLoan, UserWithSavings,Lines } from "../Assests"
 import { userType } from "./Types"
 
 export const userData: userType[] = [
@@ -26,4 +26,42 @@ export const userData: userType[] = [
         num: '102,453',
         img: UserWithSavings, 
     },
+]
+
+export const userHeadline: userType[] = [
+    {
+        id: 1,
+        name: 'ORGANIZATION',
+        num: '2,453',
+        img: Lines, 
+    },
+    {
+        id: 2,
+        name: 'USERNAME',
+        num: '2,453',
+        img: Lines, 
+    },
+    {
+        id: 3,
+        name: 'EMAIL',
+        num: '12,453',
+        img: Lines, 
+    },
+    {
+        id: 4,
+        name: 'PHONE NUMBER',
+        num: '102,453',
+        img: Lines, 
+    },
+    {
+        id: 5,
+        name: 'DATE JOINED',
+        num: '102,453',
+        img: Lines, 
+    },{
+        id: 6,
+        name: 'STATUS',
+        num: '102,453',
+        img: Lines, 
+    }
 ]

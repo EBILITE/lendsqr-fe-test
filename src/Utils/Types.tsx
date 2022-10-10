@@ -9,5 +9,5 @@ export interface userType {
     id: number,
     name: string,
     img: string,
-    num: string
+    num: string ,
 }

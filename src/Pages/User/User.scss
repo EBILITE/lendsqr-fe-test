@@ -20,8 +20,27 @@ $secondary: #545F7D;
 }
 
 .User{
-    border: 2px solid green;
+    // border: 2px solid green;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.User-Activity{
+    border: 2px solid yellow;
+    margin-top: 1rem;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.Headline-Wrapper{
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    gap: 5rem
+}
+
+.Headline{
+    display: flex;
+    align-items: center;
+    gap: .1rem
 }
