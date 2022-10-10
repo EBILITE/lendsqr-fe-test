@@ -1,0 +1,27 @@
+$primary: #213F7D;
+$secondary: #545F7D;
+
+.User-Wrapper{
+    border: 2px solid red;
+    width: 75vw;
+    margin-top: 1rem;
+    background-color: #E5E5E5;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+    h2{
+        font-size: 24px;
+        color: $primary;
+        font-weight: 500;
+        line-height: 28.15px;
+    }
+}
+
+.User{
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

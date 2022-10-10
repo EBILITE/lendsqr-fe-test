@@ -1,6 +1,6 @@
 import {  AuditLogo, Decisions, FeesAndCharges, FeesAndPricing, Gurantors, Karma, LoanRequest, Loans, Org, Pref, Reports, SavingProduct, Savings, ServiceAmount, Services, Settlement, Transactions, User, WhiteList, } from "../Assests"
 import {customerType} from './Types'
- export const customer: customerType[]= [
+ export const customer: customerType[] = [
     {
         id: 1,
         name: 'Users',

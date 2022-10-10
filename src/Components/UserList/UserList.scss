@@ -1,0 +1,21 @@
+$primary: #213F7D;
+$secondary: #545F7D;
+
+.UserList{
+    border: 2px solid blue;
+    width: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    h4{
+        color: $secondary;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.42px;
+    }
+    h3{
+        color: $primary;
+    }
+}

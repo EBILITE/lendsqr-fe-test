@@ -20,14 +20,26 @@ import Transactions from './Images/Transactions.svg'
 import Services from './Images/Services.svg'
 import WhiteList from './Images/WhiteList.svg'
 import User from './Images/Users.svg'
+import User1 from './Images/iUser.svg'
+import ActiveUser from './Images/iActiveUser.svg'
+import UserWithLoan from './Images/iUserWithLoan.svg'
+import UserWithSavings from './Images/iUserWithSavings.svg'
 
 export { AuditLogo, 
-    Dashboard, 
-    Decisions, 
-    DropDown,
-     FeesAndCharges,
-      FeesAndPricing, 
-      Gurantors, Karma, LoanRequest, 
-      Loans, Org, Org2, Pref, Reports, 
-      SavingProduct,Savings, ServiceAmount, Settlement, Transactions, 
-      Services, WhiteList, User}
+    Dashboard, UserWithSavings, 
+    Decisions,UserWithLoan , 
+    DropDown, ActiveUser, User1,
+    FeesAndCharges,
+    FeesAndPricing, 
+    Gurantors,
+    Karma,
+    LoanRequest, 
+    Loans,
+    Org,
+    Org2,
+    Pref,
+    Reports, 
+    SavingProduct,Savings,
+    ServiceAmount, Settlement,
+    Transactions, 
+    Services, WhiteList, User}
