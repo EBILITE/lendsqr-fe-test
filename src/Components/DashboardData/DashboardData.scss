@@ -2,8 +2,12 @@
     border: 2px solid green;
 }
 .Data-Flex{
-    border: 2px solid salmon;
+    // border: 2px solid salmon;
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    border-bottom: 2px solid grey;
+    h5{
+        width: 200px;
+    }
 }

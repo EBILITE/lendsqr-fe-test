@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../../context";
 import './DashboardData.scss'
+import moment from "moment";
 
 const DashboardData = () => {
   const { list, loading } = useGlobalContext();
@@ -20,7 +21,7 @@ const DashboardData = () => {
               <h5>{userName}</h5>
               <h5>{email}</h5>
               <h5>{phoneNumber}</h5>
-              <h5>{createdAt}</h5>
+              <h5>{moment(createdAt).format('LLL')}</h5>
             </div>
           );
         })}
