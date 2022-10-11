@@ -1,8 +1,9 @@
 $primary: #213F7D;
 $secondary: #545F7D;
+$text-color: #545F7D;
 
 .User-Wrapper{
-    border: 2px solid red;
+    // border: 2px solid red;
     width: 75vw;
     margin-top: 1rem;
     background-color: #E5E5E5;
@@ -36,11 +37,42 @@ $secondary: #545F7D;
     display: flex;
     align-items: center;
     // justify-content: space-between;
-    gap: 5rem
+    gap: 1.5rem
 }
 
 .Headline{
     display: flex;
-    align-items: center;
-    gap: .1rem
+    // align-items: center;
+    gap: 0
+}
+.ORGANIZATION{
+    // border: 2px solid red;
+    width: 140px;
+    color: $text-color;
+}
+.USERNAME{
+    // border: 2px solid blue;
+    // padding-right: 10px;
+    width: 110px;
+    color: $text-color;
+}
+.EMAIL{
+    // border: 2px solid salmon;
+    width: 180px;
+    color: $text-color;
+}
+.PHONE_NUMBER{
+    // border: 4px solid green;
+    width: 140px;
+    color: $text-color;
+}
+.DATE_JOINED{
+    // border: 2px solid red;
+    width: 170px;
+    color: $text-color;
+}
+.STATUS{
+    // border: 2px solid black;
+    width: 60px;
+    color: $text-color;
 }

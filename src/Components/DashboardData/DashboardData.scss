@@ -1,13 +1,45 @@
+$text-color: #545F7D;
 .Data-Wrapper{
-    border: 2px solid green;
+    // border: 2px solid green;
 }
 .Data-Flex{
     // border: 2px solid salmon;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     border-bottom: 2px solid grey;
-    h5{
-        width: 200px;
-    }
+    text-align: justify;
+}
+
+
+.ORGANIZATION1{
+    // border: 2px solid red;
+    width: 150px;
+    color: $text-color;
+}
+.USERNAME1{
+    // border: 2px solid blue;
+    width: 120px;
+    color: $text-color;
+    
+}
+.EMAIL1{
+    // border: 2px solid salmon;
+    width: 200px;
+    color: $text-color;
+}
+.PHONE_NUMBER1{
+    // border: 4px solid green;
+    width: 150px;
+    color: $text-color;
+}
+.DATE_JOINED1{
+    // border: 2px solid red;
+    width: 180px;
+    color: $text-color;
+}
+.STATUS1{
+    // border: 2px solid black;
+    width: 80px;
+    color: $text-color;
 }

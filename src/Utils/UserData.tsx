@@ -25,6 +25,7 @@ export const userData: userType[] = [
         name: 'USERS WITH SAVINGS',
         num: '102,453',
         img: UserWithSavings, 
+        
     },
 ]
 
@@ -49,13 +50,13 @@ export const userHeadline: userType[] = [
     },
     {
         id: 4,
-        name: 'PHONE NUMBER',
+        name: 'PHONE_NUMBER',
         num: '102,453',
         img: Lines, 
     },
     {
         id: 5,
-        name: 'DATE JOINED',
+        name: 'DATE_JOINED',
         num: '102,453',
         img: Lines, 
     },{
