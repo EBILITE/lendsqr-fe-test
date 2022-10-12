@@ -5,7 +5,7 @@ $text-color: #545F7D;
 .User-Wrapper{
     // border: 2px solid red;
     width: 75vw;
-    margin-top: 1rem;
+    // margin-top: 1rem;
     background-color: #E5E5E5;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -17,6 +17,7 @@ $text-color: #545F7D;
         color: $primary;
         font-weight: 500;
         line-height: 28.15px;
+        padding-top: 1rem;
     }
 }
 
@@ -27,7 +28,7 @@ $text-color: #545F7D;
     justify-content: space-between;
 }
 .User-Activity{
-    border: 2px solid yellow;
+    // border: 2px solid yellow;
     margin-top: 1rem;
     background-color: white;
     padding-left: 10px;

@@ -1,28 +1,28 @@
-export type UserApiResponseType = Array<{
+export type UserApiResponseType = {
   createdAt: string;
   orgName: string;
   userName: string;
   email: string;
   phoneNumber: string;
-  lastActiveDate: Date;
-  profile: Profile;
-  guarantor: {
+  lastActiveDate?: Date;
+  profile?: Profile;
+  guarantor?: {
     firstName: string;
     lastName: string;
     phoneNumber: string;
     gender: string;
     address: string;
   };
-  accountBalance: number;
-  accountNumber: string;
-  socials: {
+  accountBalance?: number;
+  accountNumber?: string;
+  socials?: {
     facebook: string;
     instagram: string;
     twitter: string;
   };
-  education: Education;
-  id: string;
-}>;
+  education?: Education;
+  id?: string;
+};
 
 export type Profile = {
   firstName: string;
