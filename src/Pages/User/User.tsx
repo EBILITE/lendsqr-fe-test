@@ -14,7 +14,7 @@ const User = () => {
   useEffect(() => {
     console.log("list", list[page]);
     setFollowers(list[page]);
-  }, [loading, page]);
+  }, [loading, page, list]);
 
   const handlePage = (index: React.SetStateAction<number>) => {
     setPage(index);
@@ -65,18 +65,8 @@ const User = () => {
 
         <div>
           {followers?.map((follower, idx) => {
-            console.log("follow", follower);
-            return (
-              <DashboardData
-                // orgName={""}
-                // userName={""}
-                // email={""}  
-                // phoneNumber={""}
-                // createdAt={""}
-                {...follower}
-                key={idx}
-              />
-            );
+            // console.log("follow", follower);
+            return <DashboardData {...follower} key={idx} />;
           })}
         </div>
 

@@ -11,3 +11,9 @@ export interface userType {
     img: string,
     num: string ,
 }
+
+export interface userDetail {
+    id: number,
+    name: string,
+    
+}

@@ -37,14 +37,13 @@ $text-color: #545F7D;
 .Headline-Wrapper{
     display: flex;
     align-items: center;
-    // justify-content: space-between;
+    border: 2px solid red;
     gap: 1.5rem
 }
 
 .Headline{
     display: flex;
-    // align-items: center;
-    gap: 0
+    border: 2px solid blue;
 }
 .ORGANIZATION{
     // border: 2px solid red;

@@ -3,6 +3,7 @@ import { useGlobalContext } from "../../context";
 import "./DashboardData.scss";
 import moment from "moment";
 import Dots from "../../Assests/Images/3Dots.svg";
+import { Link } from "react-router-dom";
 
 interface props {
   orgName: string;
@@ -10,9 +11,11 @@ interface props {
   email: string;
   phoneNumber: string;
   createdAt: string;
+  id: string;
 }
 
 const DashboardData: React.FC<props> = ({
+  id,
   orgName,
   userName,
   email,
@@ -25,7 +28,7 @@ const DashboardData: React.FC<props> = ({
   }
   return (
     <div className="Data-Wrapper">
-      <div className="Data-Flex">
+      <Link to={`/Dashboard/details/${id}`} className="Data-Flex">
         <h5 className="ORGANIZATION1">{orgName}</h5>
         <h5 className="USERNAME1">{userName}</h5>
         <h5 className="EMAIL1">{email}</h5>
@@ -33,7 +36,7 @@ const DashboardData: React.FC<props> = ({
         <h5 className="DATE_JOINED1">{moment(createdAt).format("LLL")}</h5>
         <h5 className="STATUS1"> Active</h5>
         <img src={Dots} alt="" />
-      </div>
+      </Link>
     </div>
   );
 };
