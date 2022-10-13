@@ -65,7 +65,7 @@ const PersonalInfo: React.FC<personal> = ({
         {/* ============= */}
         <div className="person">
           <h5>CHILDREN</h5>
-          <h4>{children}</h4>
+          <h4>{children}  Single</h4>
         </div>
         {/* =================== */}
         {/* ============= */}

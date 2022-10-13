@@ -98,7 +98,7 @@ const UserDetails = () => {
               sector={education?.sector}
               duration={education?.duration}
               officeEmail={education?.officeEmail}
-              // monthly={education?.monthlyIncome}
+              monthly={education?.monthlyIncome}
               loan={education?.loanRepayment}
             />
           </div>

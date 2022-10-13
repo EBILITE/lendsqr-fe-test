@@ -6,8 +6,8 @@ interface education {
   sector: string;
   duration: string;
   officeEmail: string;
-//   monthly: string;
-  loan: [];
+  monthly: [];
+  loan: string;
 }
 
 const Education: React.FC<education> = ({
@@ -16,7 +16,7 @@ const Education: React.FC<education> = ({
   sector,
   duration,
   officeEmail,
-//   monthly,
+    monthly,
   loan,
 }) => {
   return (
@@ -53,17 +53,15 @@ const Education: React.FC<education> = ({
         </div>
         {/* =================== */}
 
-        {/* <div className="edu">
+        <div className="edu">
           <h5>MONTHLY INCOME</h5>
-          <h4>
-            {monthly[0]} - {monthly[1]}
-          </h4>
-        </div> */}
+          <h4>{monthly}</h4>
+        </div>
         {/* =================== */}
 
         <div className="edu">
           <h5>LOAN REPAYMENT</h5>
-          <h4>{loan}</h4>
+          <h4>${loan}</h4>
         </div>
         {/* =================== */}
       </div>
