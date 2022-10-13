@@ -1,0 +1,15 @@
+$primary: #213F7D;
+$secondary: #545F7D;
+$text-color: #545F7D;
+.errorWrapper{
+    // border: 2px solid red;
+    background-color: #545F7D;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.error{
+    color: white;
+}

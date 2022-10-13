@@ -2,16 +2,20 @@ import { Avatar, BackButton, Divider } from "../../Assests";
 import { userDetails } from "../../Utils/UserData";
 import "./UserDetails.scss";
 import { useParams, Link } from "react-router-dom";
-import { url } from "../../context";
+import { url } from "../../context/context";
 import { useEffect, useState } from "react";
 import PersonalInfo from "../../Components/PersonalInfo/PersonalInfo";
 import Education from "../../Components/EducationAndEmployment/Education";
 import Socials from "../../Components/Socials/Socials";
 import Guarantor from "../../Components/Guarantor/Guarantor";
 
+
+
+
 const UserDetails = () => {
   const { id } = useParams();
   const [user, setUser] = useState<any>([]);
+  
 
   const fetchDetails = async (url: RequestInfo | URL) => {
     const response = await fetch(url);
@@ -25,8 +29,6 @@ const UserDetails = () => {
   }, [id]);
 
   const {
-    orgName,
-    userName,
     email,
     phoneNumber,
     profile,
@@ -36,8 +38,10 @@ const UserDetails = () => {
     socials,
     education,
   } = user;
+
   return (
     <div className="UserDetailContainer">
+      
       <div className="User-Wrapper">
         {/* =================Back to User=============== */}
         <Link to="/Dashboard" className="BackToUsers">
@@ -58,9 +62,11 @@ const UserDetails = () => {
         <div className="BalanceDetail">
           <div className="BalanceFlex">
             <div className="Ava">
-              <img src={profile?.avatar} alt="" />
+              <img src={profile?.avatar || Avatar} alt="" />
               <span>
-                <h3>{profile?.firstName} {profile?.lastName}</h3>
+                <h3>
+                  {profile?.firstName} {profile?.lastName}
+                </h3>
                 <h4>{profile?.bvn}</h4>
               </span>
             </div>
@@ -113,9 +119,10 @@ const UserDetails = () => {
               lastName={guarantor?.lastName}
               gender={guarantor?.gender}
               address={guarantor?.address}
-              phone={guarantor?.phoneNumber} 
-              email={""} 
-              relationship={""}            />
+              phone={guarantor?.phoneNumber}
+              email={""}
+              relationship={""}
+            />
           </div>
         </div>
       </div>

@@ -1,7 +1,8 @@
 export interface customerType {
     id: number,
     name: string,
-    icon: string
+    icon: string,
+    link: string
 }
 
 

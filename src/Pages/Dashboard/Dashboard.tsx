@@ -8,7 +8,7 @@ import './Dashboard.scss'
 const Dashboard: React.FC = () => {
   return (
     <div>
-        <Navbar />
+        <Navbar Avatar={''} firstName={''} lastName={''} />
         <div className='Dash-Container'>
 
              <div className='Dashboard'>

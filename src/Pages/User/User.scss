@@ -37,18 +37,21 @@ $text-color: #545F7D;
 .Headline-Wrapper{
     display: flex;
     align-items: center;
-    border: 2px solid red;
-    gap: 1.5rem
+    // border: 2px solid red;
+    gap: 1rem;
+    // width: 70%
 }
 
 .Headline{
     display: flex;
-    border: 2px solid blue;
+    // border: 2px solid blue;
+    
 }
 .ORGANIZATION{
     // border: 2px solid red;
     width: 140px;
     color: $text-color;
+    font-weight: 800;
 }
 .USERNAME{
     // border: 2px solid blue;
@@ -75,4 +78,7 @@ $text-color: #545F7D;
     // border: 2px solid black;
     width: 60px;
     color: $text-color;
+}
+.follower{
+    padding: 1rem;
 }

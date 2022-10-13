@@ -3,7 +3,7 @@ import DashboardData from "../../Components/DashboardData/DashboardData";
 import UserList from "../../Components/UserList/UserList";
 import { userData, userHeadline } from "../../Utils/UserData";
 import "./User.scss";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/context";
 import { UserApiResponseType } from "../../Types/Users";
 
 const User = () => {
@@ -56,14 +56,14 @@ const User = () => {
           {userHeadline.map((item) => {
             return (
               <div key={item.id} className="Headline">
-                <h5 className={item.name}>{item.name} </h5>
+                <h6 className={item.name}>{item.name} </h6>
                 <img src={item.img} alt="" />
               </div>
             );
           })}
         </div>
 
-        <div>
+        <div className="follower">
           {followers?.map((follower, idx) => {
             // console.log("follow", follower);
             return <DashboardData {...follower} key={idx} />;

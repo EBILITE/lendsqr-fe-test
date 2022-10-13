@@ -1,5 +1,5 @@
 import React from "react";
-import { useGlobalContext } from "../../context";
+import { useGlobalContext } from "../../context/context";
 import "./DashboardData.scss";
 import moment from "moment";
 import Dots from "../../Assests/Images/3Dots.svg";

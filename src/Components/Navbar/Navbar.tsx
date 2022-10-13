@@ -3,10 +3,16 @@ import './Navbar.scss'
 import NavLogo from '../../Assests/Images/LendSqrLogo.svg'
 import {AiOutlineBell} from 'react-icons/ai'
 import {FiSearch} from 'react-icons/fi'
-import Avatar from '../../Assests/Images/myPics.jpg'
+import Ava from '../../Assests/Images/myPics.jpg'
 import {MdArrowDropDown} from 'react-icons/md'
 
-const Navbar = () => {
+interface navbar{
+    Avatar: string
+    firstName: string
+    lastName: string
+}
+
+const Navbar: React.FC<navbar> = () => {
   return (
     <div className='Navbar-Wrapper'>
         <div className='Navbar-Container'>
@@ -30,7 +36,7 @@ const Navbar = () => {
                 <span> <AiOutlineBell/></span>
                 <div className='Avatar-Container'>
                     <div className='Avatar'>
-                        <img src={Avatar} alt="" />
+                        <img src={Ava} alt="" />
                      </div>
 
                     <h4>Ebilite</h4>
