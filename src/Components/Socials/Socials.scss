@@ -1,0 +1,30 @@
+$primary: #213F7D;
+$secondary: #545F7D;
+$text-color: #545f7d;
+
+.SocialContainer{
+    // border: 2px solid red;
+    margin: 1rem;
+    border-bottom: 2px solid grey;
+    h3{
+        color: $primary;
+    }
+    h5{
+        color: $secondary;
+    }
+    h4{
+        color: $text-color;
+    }
+}
+
+.SocialWrapper{
+    display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-bottom: -5px;
+}
+.social{
+    padding-bottom: -10px;
+}

@@ -6,6 +6,8 @@ import { url } from "../../context";
 import { useEffect, useState } from "react";
 import PersonalInfo from "../../Components/PersonalInfo/PersonalInfo";
 import Education from "../../Components/EducationAndEmployment/Education";
+import Socials from "../../Components/Socials/Socials";
+import Guarantor from "../../Components/Guarantor/Guarantor";
 
 const UserDetails = () => {
   const { id } = useParams();
@@ -83,8 +85,8 @@ const UserDetails = () => {
         <div className="FulPageDetails">
           <div className="Detail">
             <PersonalInfo
-              firstName={guarantor?.firstName}
-              lastName={guarantor?.lastName}
+              firstName={profile?.firstName}
+              lastName={profile?.lastName}
               number={phoneNumber}
               email={email}
               bvn={profile?.bvn}
@@ -101,6 +103,19 @@ const UserDetails = () => {
               monthly={education?.monthlyIncome}
               loan={education?.loanRepayment}
             />
+            <Socials
+              twitter={socials?.twitter}
+              facebook={socials?.facebook}
+              instagram={socials?.instagram}
+            />
+            <Guarantor
+              firstName={guarantor?.firstName}
+              lastName={guarantor?.lastName}
+              gender={guarantor?.gender}
+              address={guarantor?.address}
+              phone={guarantor?.phoneNumber} 
+              email={""} 
+              relationship={""}            />
           </div>
         </div>
       </div>
