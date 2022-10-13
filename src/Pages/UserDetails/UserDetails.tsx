@@ -21,7 +21,7 @@ const UserDetails = () => {
 
   useEffect(() => {
     fetchDetails(`${url}/${id}`);
-    console.log("newUser:", user);
+    // console.log("newUser:", user);
   }, [id]);
 
   const {
@@ -58,10 +58,10 @@ const UserDetails = () => {
         <div className="BalanceDetail">
           <div className="BalanceFlex">
             <div className="Ava">
-              <img src={Avatar} alt="" />
+              <img src={profile?.avatar} alt="" />
               <span>
-                <h3>Ebilite Uchenna</h3>
-                <h4>Lrd12345</h4>
+                <h3>{profile?.firstName} {profile?.lastName}</h3>
+                <h4>{profile?.bvn}</h4>
               </span>
             </div>
             <img src={Divider} alt="" />
@@ -70,8 +70,8 @@ const UserDetails = () => {
             </div>
             <img src={Divider} alt="" />
             <div>
-              <h3>$200,000.00</h3>
-              <h4>123456789 / Providence Bank</h4>
+              <h3>${accountBalance},000.00</h3>
+              <h4>{accountNumber} / Providence Bank</h4>
             </div>
           </div>
           <div className="Detail-Map">

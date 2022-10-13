@@ -4,7 +4,7 @@ $secondary: #545F7D;
 $text-color: #545f7d;
 
 .UserDetailContainer{
-    border: 2px solid red;
+    // border: 2px solid red;
     background-color: $background;
     width: 80vw;
     height: 100%;  
@@ -12,7 +12,7 @@ $text-color: #545f7d;
 }
 
 .User-Wrapper{
-    border: 2px solid blue;
+    // border: 2px solid blue;
     margin: 0 auto;
     width: 90%;
     margin-top: 1rem;
@@ -70,7 +70,7 @@ $text-color: #545f7d;
 .BalanceDetail{
     // border: 2px solid red;
     width: 100%;
-    height: 190px;
+    height: 210px;
     background-color: white;
     // padding-bottom: 1rem;
 }
@@ -91,6 +91,10 @@ $text-color: #545f7d;
     display: flex;
     align-items: center;
     gap: 1rem;
+    img{
+        border-radius: 50%;
+       
+    }
 }
 .Detail-Map{
     // border: 2px solid blue;
@@ -104,7 +108,7 @@ $text-color: #545f7d;
 }
 
 .FulPageDetails{
-    border: 2px solid blue;
+    // border: 2px solid blue;
     width: 100%;
     margin-top: 1rem;
     // height: 100vh;
@@ -112,8 +116,8 @@ $text-color: #545f7d;
 }
 
 .Detail{
-    border: 2px solid coral;
+    // border: 2px solid coral;
     width: 100%;
     margin: 0 auto;
-    // margin: 1rem;
+    padding-top: 1rem;
 }
