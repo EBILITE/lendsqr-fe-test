@@ -4,7 +4,8 @@ import "./UserDetails.scss";
 import { useParams, Link } from "react-router-dom";
 import { url } from "../../context";
 import { useEffect, useState } from "react";
-
+import PersonalInfo from "../../Components/PersonalInfo/PersonalInfo";
+import Education from "../../Components/EducationAndEmployment/Education";
 
 const UserDetails = () => {
   const { id } = useParams();
@@ -80,11 +81,27 @@ const UserDetails = () => {
 
         {/* =======================Full Page Details ==================== */}
         <div className="FulPageDetails">
-          
-          <h1>id: {id}</h1>
-          <h2>{orgName}</h2>
-          <h2>{userName}</h2>
-          {/* <h2>{education?.level}</h2> */}
+          <div className="Detail">
+            <PersonalInfo
+              firstName={guarantor?.firstName}
+              lastName={guarantor?.lastName}
+              number={phoneNumber}
+              email={email}
+              bvn={profile?.bvn}
+              gender={guarantor?.gender}
+              resident={profile?.address}
+              children={undefined}
+            />
+            <Education
+              level={education?.level}
+              status={education?.employmentStatus}
+              sector={education?.sector}
+              duration={education?.duration}
+              officeEmail={education?.officeEmail}
+              // monthly={education?.monthlyIncome}
+              loan={education?.loanRepayment}
+            />
+          </div>
         </div>
       </div>
     </div>
