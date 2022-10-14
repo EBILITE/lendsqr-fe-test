@@ -47,3 +47,5 @@ Files container=ed under the src folder:
 5. Types: Contains the typescript formating of the info coming from the Api 
 
 6. Utils: Contains the Pagination Logic, StaicData, Types UserData Types
+
+7. tests: contains the test of the didfferent projects parts
